@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-navy-deep: #0a1628;
+  --color-navy-abyss: #050b1a;
+  --color-navy-surface: #0f1e33;
+  --color-gold: #994f24;
+  --color-gold-soft: #bd6534;
+  --color-gold-dim: #5c2f15;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  background-color: var(--color-navy-deep);
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: rgba(153, 79, 36, 0.4);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-navy-abyss);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(92, 47, 21, 0.5);
+  border-radius: 999px;
+  border: 2px solid var(--color-navy-abyss);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(189, 101, 52, 0.6);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@layer utilities {
+  /* Navy-base com leve sopro copper no canto, organico */
+  .bg-ambient-warm-1 {
+    background-color: #0a1628;
+    background-image:
+      radial-gradient(ellipse 70% 50% at 88% 12%, rgba(189, 101, 52, 0.10), transparent 65%),
+      radial-gradient(ellipse 55% 45% at 5% 92%, rgba(20, 40, 64, 0.55), transparent 70%);
+  }
+
+  .bg-ambient-warm-2 {
+    background-color: #050b1a;
+    background-image:
+      radial-gradient(ellipse 55% 45% at 12% 28%, rgba(189, 101, 52, 0.09), transparent 65%),
+      radial-gradient(ellipse 60% 50% at 95% 88%, rgba(15, 30, 51, 0.55), transparent 70%);
+  }
+
+  .bg-ambient-warm-3 {
+    background-color: #050b1a;
+    background-image:
+      radial-gradient(ellipse 60% 45% at 92% 78%, rgba(189, 101, 52, 0.09), transparent 65%),
+      radial-gradient(ellipse 55% 50% at 8% 14%, rgba(20, 40, 64, 0.55), transparent 70%);
+  }
+
+  /* Vertical com calor central -- usado no Investimento */
+  .bg-ambient-deep {
+    background-color: #0a1628;
+    background-image:
+      radial-gradient(ellipse 80% 55% at 50% -10%, rgba(189, 101, 52, 0.08), transparent 60%),
+      radial-gradient(ellipse 70% 50% at 50% 110%, rgba(153, 79, 36, 0.06), transparent 65%);
+  }
+
+  /* Copper metalico para a secao do Arthur -- brilho atras da foto + base polida */
+  .bg-ambient-copper {
+    background:
+      /* Halo de brilho atras da foto (lado direito no desktop) */
+      radial-gradient(ellipse 45% 55% at 78% 50%, rgba(255, 210, 150, 0.22), transparent 60%),
+      /* Suave realce no canto superior esquerdo */
+      radial-gradient(ellipse 70% 55% at 18% 8%, rgba(212, 122, 60, 0.30), transparent 62%),
+      /* Sombra inferior direita */
+      radial-gradient(ellipse 60% 50% at 95% 95%, rgba(40, 18, 6, 0.45), transparent 65%),
+      /* Base de metal polido -- gradiente diagonal multi-stop com highlight central */
+      linear-gradient(135deg,
+        #6b3819 0%,
+        #8a4520 22%,
+        #9e5326 42%,
+        #b8693a 50%,
+        #9e5326 58%,
+        #844320 78%,
+        #5c2f15 100%
+      );
+  }
+
+  /* Final: navy-abyss com bloom copper e sombra superior para amarrar */
+  .bg-ambient-final {
+    background-color: #050b1a;
+    background-image:
+      radial-gradient(ellipse 80% 55% at 50% 60%, rgba(153, 79, 36, 0.20), transparent 55%),
+      radial-gradient(ellipse 65% 45% at 50% 0%, rgba(15, 30, 51, 0.6), transparent 70%);
+  }
+}
