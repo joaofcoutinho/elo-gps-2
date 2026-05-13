@@ -125,7 +125,7 @@ export const copy = {
   paraQuem: {
     eyebrow: "PARA QUEM É",
     headline:
-      "Esta imersão é para médicos que já são excelentes — e estão prontos para serem reconhecidos como tal.",
+      "Esta imersão é para médicos que já são excelentes — e estão prontos para serem reconhecidos como tal.",
     lead: "Se você entrega resultados mas o mercado ainda te trata como mais um, o problema não é técnico. É de posicionamento.",
     items: [
       {
