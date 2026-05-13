@@ -126,15 +126,15 @@ export const copy = {
     eyebrow: "PARA QUEM É",
     headline:
       "Esta imersão é para médicos que já são excelentes — e estão prontos para serem reconhecidos como tal.",
-    lead: "Se você entrega resultados acima da média mas o mercado ainda te trata como mais um, o problema não é técnico. É de posicionamento.",
+    lead: "Se você entrega resultados mas o mercado ainda te trata como mais um, o problema não é técnico. É de posicionamento.",
     items: [
       {
         title: "Você tem 5+ anos de carreira sólida",
         description:
-          "Domina a técnica e entrega resultado clínico de excelência — mas o mercado ainda te coloca no mesmo balaio que profissionais com metade da sua bagagem.",
+          "Domina a técnica e entrega resultado — mas o mercado ainda te coloca no mesmo nível que profissionais com metade da sua bagagem.",
       },
       {
-        title: "Quer pacientes premium, não volume",
+        title: "Quer clientes de alto ticket",
         description:
           "Quer encher a agenda com pacientes que pagam acima de R$ 1.000 na consulta e investem R$ 30K+ em tratamentos — sem precisar reduzir preço para conquistar.",
       },
@@ -144,12 +144,12 @@ export const copy = {
           "Está farto de ouvir “tá caro” e ser comparado com clínicas populares. Sabe que sua entrega vale mais — só falta o mercado enxergar.",
       },
       {
-        title: "Quer liberdade de convênios e plantões",
+        title: "Quer crescer o número de clientes particulares",
         description:
           "Não quer mais depender de tabela de plano nem trocar finais de semana por receita. Quer um consultório que funciona pela autoridade, não pelo volume.",
       },
       {
-        title: "Quer ser referência, não mais uma opção",
+        title: "Quer ser referência na sua especialidade",
         description:
           "Quer que pacientes te procurem pelo nome, indiquem sem comparar com mais ninguém — e que sua marca tenha peso assim que você entra na sala.",
       },
@@ -168,7 +168,7 @@ export const copy = {
   porQueAgora: {
     eyebrow: "O CONTEXTO",
     headline:
-      "O mercado da saúde nunca esteve mais aquecido — nem mais competitivo.",
+      "O mercado da saúde no Brasil nunca esteve mais aquecido — nem mais competitivo.",
     stats: [
       {
         tag: "Mercado",
@@ -189,7 +189,7 @@ export const copy = {
         source: "Global Wealth Report, 2022",
       },
       {
-        tag: "Luxo",
+        tag: "Consumo",
         value: "+51,74%",
         label: "de crescimento no mercado de luxo até 2030",
         source: "Associação Brasileira das Empresas de Luxo (Abrael)",
@@ -276,13 +276,13 @@ export const copy = {
       "Acesso ao grupo de suporte exclusivo no WhatsApp por 30 dias",
     ],
     bonus: {
-      label: "BÔNUS ELO",
+      label: "BÔNUS ELO EDUCATION",
       text: "1 ano de hot seats via Zoom + treinamento estendido para até 4 pessoas da sua equipe.",
     },
   } satisfies GradeDosDias,
 
   investimento: {
-    eyebrow: "INVESTIMENTO",
+    eyebrow: "VISÃO DE FUTURO",
     label: "INVESTIMENTO",
     price: "R$ 5.000",
     microcopy: "por pessoa · plano inicial de acesso",

@@ -1,8 +1,8 @@
-import { Hourglass, Crown, Scale, KeyRound, Award, X, type LucideIcon } from "lucide-react";
+import { Hourglass, Crown, Scale, KeyRound, Award, type LucideIcon } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { Card } from "@/components/ui/Card";
 import { IconBadge } from "@/components/ui/IconBadge";
-import { MetallicBorder, metallicAngle } from "@/components/ui/MetallicBorder";
+import { metallicAngle } from "@/components/ui/MetallicBorder";
 import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 import { FadeInUp } from "@/components/ui/FadeInUp";
 import { copy } from "@/lib/copy";
@@ -57,29 +57,6 @@ export function ParaQuemE() {
         })}
       </div>
 
-      {/* Não é para você se */}
-      <FadeInUp delay={0.1} className="mx-auto mt-10 max-w-3xl">
-        <Card className="border-white/10 bg-white/[0.03]">
-          <h3 className="flex items-center gap-3 text-xs font-black uppercase tracking-eyebrow text-ink-secondary md:text-sm">
-            <span className="relative grid h-7 w-7 place-items-center rounded-full">
-              <MetallicBorder angle={45} />
-              <X className="relative h-4 w-4 text-ink-muted" strokeWidth={2.5} />
-            </span>
-            {c.naoEParaVoce.title}
-          </h3>
-          <ul className="mt-5 grid grid-cols-1 gap-3 md:grid-cols-2">
-            {c.naoEParaVoce.items.map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 text-sm leading-relaxed text-ink-muted md:text-base"
-              >
-                <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-ink-muted" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </Card>
-      </FadeInUp>
     </Section>
   );
 }

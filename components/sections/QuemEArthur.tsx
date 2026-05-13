@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Compass, Trophy, Building2, BookOpen, Quote, Instagram, Linkedin, Globe, type LucideIcon } from "lucide-react";
+import { Compass, Trophy, Building2, BookOpen, Quote, Instagram, Linkedin, type LucideIcon } from "lucide-react";
 import { Section } from "@/components/ui/Section";
 import { SectionEyebrow } from "@/components/ui/SectionEyebrow";
 import { FadeInUp } from "@/components/ui/FadeInUp";
@@ -21,14 +21,13 @@ export function QuemEArthur() {
         {/* Portrait com quote sobreposto — desktop: direita */}
         <FadeInUp delay={0.1} className="order-1 lg:order-2 lg:col-span-5">
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-white/20 bg-navy-surface shadow-card">
-            {/* TODO: substituir /arthur/portrait.jpg por retrato definitivo */}
             <Image
-              src="/arthur/portrait.jpg"
+              src="/arthur/Arthur.png"
               alt="Retrato de Arthur Galvão"
               fill
               loading="lazy"
               sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-cover"
+              className="object-cover object-top"
             />
 
             {/* Vinheta para legibilidade da quote */}
@@ -88,16 +87,6 @@ export function QuemEArthur() {
             >
               <Linkedin className="h-4 w-4" strokeWidth={2} />
               LinkedIn
-            </a>
-            <a
-              href="https://arthurgalvao.com.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 rounded-full border border-white/30 bg-white/[0.08] px-5 py-2.5 text-sm font-bold text-ink-primary backdrop-blur-sm transition-colors hover:bg-white/15"
-              aria-label="Visitar site oficial de Arthur Galvão"
-            >
-              <Globe className="h-4 w-4" strokeWidth={2} />
-              Site
             </a>
           </div>
         </FadeInUp>
